@@ -10,7 +10,7 @@ pipeline {
 			steps{
 				git credentialsId: 'github-token', url: 'https://github.com/acquia/mc-csf-deploy.git'
 				sh '''
-					pwd
+					cd aws-migration
 					ls
 				 '''
 			}
